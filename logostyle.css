@@ -1,0 +1,42 @@
+
+.logo{
+    width: fit-content;
+    position: fixed;
+    display: inline-block;
+    cursor: pointer;
+    font-family: "Newsreader", serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    overflow: visible;
+    margin: 1rem;
+    opacity: 1;
+}
+
+.logo .long {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 20rem;
+    transition-delay: 0.3s;
+}
+
+.logo .short {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.3 ease;
+    transition-delay: 0.3s;
+}
+
+.logo:hover .short {
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.logo:hover .long {
+    opacity: 1;
+    transition-delay: 0s;
+}
