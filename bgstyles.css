@@ -30,7 +30,6 @@
     opacity: 0.25;
 }
 
-
 .bgVid{
     position: absolute;
     opacity: 0;
@@ -52,7 +51,6 @@
     width: 140%;
     height: 140%;
     background-image: url(/images/noise1.jpg);
-    background-size: 100px 100px;
     background-repeat: repeat;
     pointer-events: none;
     opacity: 0.15;
