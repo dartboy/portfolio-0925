@@ -8,19 +8,20 @@
     padding-bottom: var(--header-height);
     padding-top: var(--header-height);
     z-index: -1;
+    scroll-behavior: none;
 
 }
 
 .videoDiv{
     height: 100%;
     left: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
 }
 
 .videoOverlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -45,7 +46,7 @@
 }
 
 .grain{
-    position: fixed;
+    position: absolute;
     top: -20%;
     left: -20%;
     width: 140%;

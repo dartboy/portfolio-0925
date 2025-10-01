@@ -1,7 +1,7 @@
 
 .logo{
     width: fit-content;
-    position: fixed;
+    position: absolute;
     display: inline-block;
     cursor: pointer;
     font-family: "Newsreader", serif;

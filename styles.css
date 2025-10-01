@@ -10,6 +10,15 @@ font-family: "Inconsolata", monospace;
 font-family: "Newsreader", serif;
 */
 
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* disables scrolling */
+  background: black;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -23,11 +32,24 @@ li{
     font-weight: lighter;
 }
 
+.pageWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.2rem;
+    border: 5px solid #000;
+    overflow: hidden;
+    background: #111;
+}
+
+
 .bodyWrapper{
     display: inline;
 }
 .headerNav{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -58,7 +80,7 @@ li{
     display: flex;
     overflow: auto;
     padding: 60px 0;
-    position: fixed;
+    position: absolute;
     margin: 1rem;
     margin-top: 5rem;
 
