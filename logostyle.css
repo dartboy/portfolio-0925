@@ -1,8 +1,6 @@
 
 .logo{
-    width: fit-content;
     position: absolute;
-    display: inline-block;
     cursor: pointer;
     font-family: "Newsreader", serif;
     font-size: 3rem;
@@ -16,12 +14,14 @@
 
 .logo .long {
     position: absolute;
-    display: inline-block;
+    pointer-events: none;
+    display: flex;
     top: 0;
     left: 0;
     opacity: 0;
-    width: 20rem;
+    width: 1rem;
     transition-delay: 0.3s;
+    white-space: nowrap;
 }
 
 .logo .short {

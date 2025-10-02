@@ -15,7 +15,6 @@ font-family: "Newsreader", serif;
 html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden; /* disables scrolling */
   background: black;
 }
 
@@ -33,7 +32,7 @@ li{
 }
 
 .pageWrapper {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100dvw;
@@ -74,16 +73,23 @@ li{
 
 .menuList-wrapper{
     position: absolute;
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     align-items: center;
     display: flex;
-    overflow: auto;
+    overflow-y: auto;
     padding: 60px 0;
-    position: absolute;
     margin: 1rem;
     margin-top: 5rem;
+    box-sizing: border-box;
 
+}
+
+.menuList-wrapper {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
 }
 
 
@@ -98,4 +104,5 @@ li{
     color: #fff;
     font-weight: bold;
 }
+
 
