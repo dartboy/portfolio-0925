@@ -8,32 +8,56 @@
 .contentWrapper::-webkit-scrollbar { display: none;}
 
 .contentWrapper {
+    
+    border-color: black;
+    border-radius: 3rem;
     display: flex;
     flex-direction: column;
-
+    position: relative;
     gap: 1rem;
     flex: 1;
     border-radius: 2dvh;
     overflow-y: auto;
     color: white;
     margin-top: 5rem;
-    background: black;
-    /* background-image: url(../images/minimalBuilding.jpg); */
-   
+    z-index: 1;
+    /* background: linear-gradient(90deg,rgb(0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%); */
+    background-image: url(../images/zionbg.jpg);
 
 }
-.bgImg{
+.backgroundGrain{
     position: absolute;
-    width: 100%;
+    top: 0;
+    left: 0;
+    height: 140%;
+    width: 140%;
+    min-width: 1000px;
+    background-image: url(../images/noise1.jpg);
+    background-repeat: repeat;
+    z-index: -1;
+    opacity: 0.25;
+    mix-blend-mode: multiply;
+
+}
+.backgroundImg{
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
+    width: 100%;
+    min-width: 800px;
     background: linear-gradient(90deg,rgb(0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    z-index: -1;
+    mix-blend-mode: multiply;
 
 }
 .box{
+    position: relative;
     border-radius: 2dvh;
     padding: 1dvh;
     height: fit-content;
     width: 100%;
+    z-index: 1;
 }
 
 .copyBox{
@@ -53,16 +77,31 @@
 
 .videoWrapper {
     display: flex;
+    flex-direction: column;
     border: none;
     width: 100%;
     max-width: 1200px;
-    
     aspect-ratio: 16 / 7;
+}
 
+.sixteenNine {
+    aspect-ratio: 16 / 9;
 }
 
 .iframeVideo {
     border: none;
-    flex: 1;
     height: 100%;
+
+    align-self: stretch;
+    flex-shrink: 0;
+}
+
+.creditBox{
+    position: relative;
+    top: 2rem;
+    text-align: right;
+    padding-right: 1rem;
+    
+
+    
 }
