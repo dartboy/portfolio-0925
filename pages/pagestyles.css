@@ -1,0 +1,68 @@
+
+
+.pagesWrapper {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+.contentWrapper::-webkit-scrollbar { display: none;}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+    flex: 1;
+    border-radius: 2dvh;
+    overflow-y: auto;
+    color: white;
+    margin-top: 5rem;
+    background: black;
+    /* background-image: url(../images/minimalBuilding.jpg); */
+   
+
+}
+.bgImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,rgb(0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+
+}
+.box{
+    border-radius: 2dvh;
+    padding: 1dvh;
+    height: fit-content;
+    width: 100%;
+}
+
+.copyBox{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    max-width: 40rem;
+
+}
+
+.title{
+    padding: 10px;
+    font-family: "Newsreader", serif;
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+
+.videoWrapper {
+    display: flex;
+    border: none;
+    width: 100%;
+    max-width: 1200px;
+    
+    aspect-ratio: 16 / 7;
+
+}
+
+.iframeVideo {
+    border: none;
+    flex: 1;
+    height: 100%;
+}
