@@ -53,9 +53,9 @@
     background-image: url(images/noise1.jpg);
     background-repeat: repeat;
     pointer-events: none;
-    opacity: 0.15;
+    opacity: 0.2;
     mix-blend-mode: multiply;
-    animation: grainMove 1s steps(1) infinite;
+    animation: grainMove 1.5s steps(1) infinite;
 }
 
 @keyframes grainMove {

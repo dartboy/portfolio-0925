@@ -19,6 +19,9 @@ html, body {
   scrollbar-width: none;
 }
 
+p {
+    font-family: inherit;
+}
 
 .--sansSerif {
     font-family: Arial, Helvetica, sans-serif;
@@ -64,6 +67,16 @@ li{
     width: 100%;
     height: 5rem;
     z-index: 999;
+}
+
+.footer{
+    display: flex;
+    font-family: "Newsreader", serif;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: #111;
 }
 
 .headerMenu {
