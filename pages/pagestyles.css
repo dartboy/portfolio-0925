@@ -2,6 +2,7 @@
 
 .pagesWrapper {
     display: flex;
+    flex-direction: column;
     position: relative;
     height: 100%;
     background: #111;
@@ -97,6 +98,7 @@
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
+    width: 100%;
     max-width: 700px;
     gap: 1rem;
     line-height: 2rem;
@@ -190,9 +192,12 @@ img{
 }
 
 .headshot {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-
+    padding-right: calc(10px + 1dvh);
+    aspect-ratio: 10/11;
+    overflow: hidden;
 }
 
 
