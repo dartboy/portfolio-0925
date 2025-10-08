@@ -28,13 +28,25 @@
     transition: max-width 1s ease;
 }
 
+.gridContainer {
+    max-width: 1200px;
+}
 
 .videoGrid {
-    display: grid;
+    display: inline-grid;
+
 
     width: 100%;
-    grid-template-columns: calc(70dvw) calc(0.3dvw);
-    grid-template-rows: calc(100dvw  * (1/2.6));
+    grid-template-columns: auto auto;
+    grid-template-rows:  min(calc(100dvw  * (1/2.6)), 462px);
+
+}
+.videoGrid2 {
+    margin-top: min(3dvw, 50px);
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: min(calc(100dvw  * (1/2.6)), 462px);
 
 }
 
