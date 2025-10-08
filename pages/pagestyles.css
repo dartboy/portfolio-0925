@@ -105,7 +105,7 @@
     padding-bottom: 2rem;
     background: #111;
     padding: 10px;
-    align-self: center;
+    /* align-self: center; */
 }
 
 .quoteBox {
