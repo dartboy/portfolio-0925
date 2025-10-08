@@ -30,6 +30,7 @@
 
 .gridContainer {
     max-width: 1200px;
+    padding: 10px;
 }
 
 .videoGrid {
@@ -53,10 +54,10 @@
 .gridVideo {
     height: 100%;
     /* width: 100%; */
-    border-style: solid;
+    /* border-style: solid; */
     border-width: 1px;
     border-radius: 10px;
-    border-color: white;
+    /* border-color: white; */
 }
 
 .arVertical {

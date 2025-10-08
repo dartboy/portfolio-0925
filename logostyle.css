@@ -33,13 +33,13 @@
 }
 
 .logo:hover .short {
-    transition-delay: 0.5s;
+
     opacity: 0;
 
 }
 
 .logo:hover .long {
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
     opacity: 1;
 
 }

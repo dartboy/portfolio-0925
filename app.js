@@ -26,8 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     videos[current].classList.add("active");   
     videos[current].play();
 
-    
- 
     videos.forEach((video, i) => {
         
         video.addEventListener("ended", () => {
