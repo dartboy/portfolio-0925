@@ -32,8 +32,9 @@
     flex-direction: column;
     width: fit-content;
     border-radius: 1rem;
-    padding-left: 10px;
+
     padding-top: 10px;
+
 }
 
 .zionWrapper {
@@ -96,21 +97,22 @@
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    max-width: 100;
+    max-width: 700px;
     gap: 1rem;
     line-height: 2rem;
     padding-bottom: 2rem;
     background: #111;
     padding: 10px;
+    align-self: center;
 }
 
 .quoteBox {
     position: relative;
-    font-family: inherit;
-    padding: 15px;
+
     border-radius: 5px;
-    font-size: 2rem;
-    line-height: 3lh;
+    font-size: 1.8rem;
+
+
 
 }
 
@@ -131,7 +133,9 @@
     max-width: 1200px;
     max-height: 80vh;
     justify-content: flex-start;
+    padding: 5px;
 }
+
 
 .sixteenNine {
     aspect-ratio: 16 / 9;
@@ -170,4 +174,23 @@ img{
     
 
     
+}
+
+.copyBg{
+    position: relative;
+    width: 100dvw;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.centered {
+    align-self: center;
+}
+
+.headshot {
+    overflow: hidden;
+    width: 100%;
+
 }
