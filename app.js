@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const projectTitles = document.querySelectorAll(".projectTitle");
 
     let current = 0;
+    let hoverActive = false;
 
     function highlightTitle(video) {
         const classes = Array.from(video.classList);
@@ -13,6 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    function playVideoAt(index) {
+        videos.forEach(v => {
+            v.pause();
+            v.currentTime = 0;
+            v.classList.remove("active");
+        });
+        videos[index].classList.add("active");
+        videos[index].play();
+        highlightTitle(videos[index]);
+        current = index;
+    }
 
     videos[current].play();
     highlightTitle(videos[current]);
@@ -24,21 +36,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     videos[current].classList.add("active");   
-    videos[current].play();
+    playVideoAt(current);
+
+
+    // -- LOOP THROUGH VIDEOS ON END --
 
     videos.forEach((video, i) => {
-        
         video.addEventListener("ended", () => {
             console.log("HELLO");
-        
+            if (hoverActive) {
+                playVideoAt(current);
+                return;
+            };
             videos[i].pause();
             videos[i].currentTime = 0;
             videos[i].classList.remove("active");
             current = (i + 1) % videos.length;
-            videos[current].classList.add("active");
-            videos[current].play();
-            highlightTitle(videos[current]);
+            playVideoAt(current);
     });
+   });
+
+   projectTitles.forEach(title => {
+        title.addEventListener("mouseenter", () => {
+            hoverActive = true;
+            console.log("SSSADAS");
+              const titleClasses = Array.from(title.classList);
+        const matchClass = titleClasses.find(
+            cls => cls !== "projectTitle" && cls !== "highlight"
+        );
+
+        if (!matchClass) return; // avoid undefined errors
+
+        // Find the video with that class
+        const newIndex = Array.from(videos).findIndex(v =>
+            v.classList.contains(matchClass)
+        );
+            if (newIndex !== -1) playVideoAt(newIndex);
+        });
+        title.addEventListener("mouseleave", () => {
+            hoverActive = false;
+        });
    });
 
 });

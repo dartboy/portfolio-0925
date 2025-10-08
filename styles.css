@@ -116,8 +116,12 @@ li{
 .projectTitle{
     font-variant: normal;
     font-size: 2rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 5dvh; 
     transition: all 0.5s;
+}
+
+.projectTitleLi {
+    margin-bottom: 5dvh; 
 }
 
 .projectTitle.highlight {
