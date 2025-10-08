@@ -20,15 +20,16 @@
     left: 0;
     opacity: 0;
     width: 1rem;
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
+    transition: opacity 0.2s ease;
     white-space: nowrap;
 }
 
 .logo .short {
     display: inline-block;
     opacity: 1;
-    transition: opacity 0.3 ease;
-    transition-delay: 0.3s;
+    transition: opacity 0.2s ease;
+    transition-delay: 0.2s;
 }
 
 .logo:hover .short {
@@ -38,5 +39,5 @@
 
 .logo:hover .long {
     opacity: 1;
-    transition-delay: 0s;
+    transition-delay: 0.2s;
 }
