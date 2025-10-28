@@ -1,6 +1,9 @@
 
 .background {
     background: #1E1E1E;
+    background-image: url('https://cdn.myportfolio.com/a83f6b4e-c229-4f0c-a73c-220b0d616ce6/5eb815b3-8466-4a4f-9780-f0e7624cb88e_rw_1920.jpg?h=9f62e40f2d6b4807e926510cb0947526');
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
