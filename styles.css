@@ -113,6 +113,24 @@ li{
 }
 
 
+.menuStack {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.siteIntro {
+    width: min(100%, 30rem);
+    margin-bottom: 2rem;
+    font-size: clamp(0.85rem, 3.2vw, 1rem);
+    line-height: 1.5;
+    color: #fff;
+    opacity: 0.65;
+    letter-spacing: 0.02em;
+    overflow-wrap: break-word;
+}
+
 .projectTitle{
     font-variant: normal;
     font-size: 2rem;
@@ -127,6 +145,22 @@ li{
 .projectTitle.highlight {
     color: #fff;
     font-weight: bold;
+}
+
+/* Touch-primary devices: the swipe-to-select carousel (app.js) takes over
+   scrolling of this list, so native free-scroll/bounce is turned off here and
+   handled as controlled, one-item-at-a-time steps instead. */
+@media (hover: none) and (pointer: coarse) {
+    .menuList-wrapper {
+        overflow: hidden;
+        touch-action: pan-y;
+        align-items: flex-start;
+        scroll-behavior: smooth;
+    }
+
+    .menuList-wrapper::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 

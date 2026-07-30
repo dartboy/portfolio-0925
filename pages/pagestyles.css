@@ -31,8 +31,11 @@
 .titleWrapper {
     display: flex;
     flex-direction: column;
+    align-self: center;
     width: fit-content;
+    max-width: 100%;
     border-radius: 1rem;
+    text-align: center;
 
     padding-top: 10px;
 
@@ -123,7 +126,7 @@
     font-family: Arial, Helvetica, sans-serif;
     /* font-family: "Newsreader", serif; */
     font-weight: light;
-    font-size: 3rem;
+    font-size: clamp(1.85rem, 5.5vw, 3rem);
 
 }
 
